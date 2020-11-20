@@ -1,0 +1,12 @@
+version: '3.0'
+services:
+  web:
+    image: nginx
+    volumes:
+      - "/home/bianca.pasarea/Desktop/Projects/Learning/Docker_learning:/usr/share/nginx/html"
+    ports:
+      - "8081:80"
+    networks:
+      - bianca_pasarea
+networks:
+  bianca_pasarea:

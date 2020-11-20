@@ -1,0 +1,5 @@
+# This are commands ran for docker exercises
+
+docker run -d -p 8081:80 --name web -v /home/bianca.pasarea/Desktop/Projects/Learning/Docker_learning:/usr/share/nginx/html nginx 
+docker network create bianca_pasarea
+docker network connect bianca_pasarea web
