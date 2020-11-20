@@ -3,7 +3,7 @@ services:
   web:
     image: nginx
     volumes:
-      - "/home/bianca.pasarea/Desktop/Projects/Learning/Docker_learning:/usr/share/nginx/html"
+      - "${LOCAL_DIR}:/usr/share/nginx/html"
     ports:
       - "8081:80"
     networks:
